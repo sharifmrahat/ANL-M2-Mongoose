@@ -1,20 +1,22 @@
-import express, { Application, NextFunction, Request, Response } from 'express'
-import cors from 'cors'
-import dotenv from 'dotenv'
+import express, { Application } from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import userRoute from "./app/modules/user/user.route";
 
-const app: Application = express()
+const app: Application = express();
 
 //cors
-app.use(cors())
+app.use(cors());
 
 //dotenv
-dotenv.config()
+dotenv.config();
 
+//parse data
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 //api-endpoints
-app.get("/" , (req: Request, res: Response, next: NextFunction) => {
-    res.send({success: true, message: 'API is working'})
-    next()
-})
+app.use("/api/v1/user", userRoute);
 
-export default app
+export default app;
