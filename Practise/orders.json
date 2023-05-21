@@ -1,0 +1,17 @@
+[
+    {
+      "order_number": "ORD-001",
+      "total_amount": 100.0,
+      "customerEmail": "lindadavis@example.com"
+    },
+    {
+      "order_number": "ORD-002",
+      "total_amount": 150.0,
+      "customerEmail": "alicewilliams@example.com"
+    },
+    {
+      "order_number": "ORD-003",
+      "total_amount": 200.0,
+      "customerEmail": "marksmith@example.com"
+    }
+  ]
