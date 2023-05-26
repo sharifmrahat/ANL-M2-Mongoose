@@ -7,4 +7,3 @@
 - Module-8: Explore Powerful Aggregation Framework and Indexing
 - Module-8.5: Practice
 - Module-9: Assignment-2
-- Module-9.5: Bonus
